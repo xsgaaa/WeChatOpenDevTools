@@ -1,12 +1,14 @@
 
 
 var base = Process.enumerateModules()[0].base
-
+send(base)
 //HOOK F12配置 替换原本内容
+
 var pvWechatapphtml = base.add(0x2EC9FBD) 
 Interceptor.attach(pvWechatapphtml, {
     onEnter(args) {
-        this.context.rdx = 0x00007FF67F85D6BD;
+        
+        this.context.rdx = base.add(0x7C0D6BD);
         var rdx = this.context.rdx;
         send(rdx)
     }
