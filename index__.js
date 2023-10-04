@@ -4,6 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const util = require('util');
 const readFile = util.promisify(fs.readFile);
+debugger;
 function onError(error) {
     console.error(error.stack);
   }

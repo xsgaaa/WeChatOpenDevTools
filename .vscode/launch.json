@@ -12,6 +12,36 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}\\index.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "WeChatAppEx.exe",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\WeChatAppEx.exe.js",
+            "args": ["8447","x64"]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "ERR WeChatAppEx.exe",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\WeChatAppEx.exe.js",
+            "args": ["8449","x64"]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "WeChatWin.dll",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\WeChatWin.dll.js",
+            "args": ["3.9.7.29","x64","C:/Program Files/Tencent/WeChat/[3.9.7.29]"]
         }
     ]
 }

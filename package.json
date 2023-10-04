@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@types/frida-gum": "^18.4.3",
     "cmdline-windows": "^1.0.1",
     "frida": "^16.1.4"
   }
