@@ -6,6 +6,8 @@
 
 **注意只支持 Window 平台！！！！**
 
+注意本库只能作为学习用途, 造成的任何问题与本库开发者无关, 如侵犯到你的权益，请联系下面的作者QQ说明来意后删除
+
 [点击链接加入QQ群聊【编程喵交流群】](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=6egP5tm2rrUCPOJj0j52PCyL5MM6YuYP&authKey=89mtVgStEuC85eDLVx6bRFhlTiqgjd6NmYIaICLYDGkfLExrLxHafFBoWakKfn4N&noverify=0&group_code=850969908)                             
 
 上面的群是一个专门玩js逆向的群！欢迎各位大佬来一起研究技术.
