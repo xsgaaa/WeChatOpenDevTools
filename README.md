@@ -36,7 +36,10 @@
 
 npm install
 
-
+4.安装依赖失败的原因：
+     node-gyp 自行安装 并且 自行安装 vs2019 选择C++桌面开发安装，安装后再 npm install
+     或者自行百度 node-gyp
+     
 
 ####  WeChatWin.dll.js 
 
