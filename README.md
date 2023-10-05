@@ -153,6 +153,6 @@ HOOK到小程序加载! wxa+id
 
 ![小程序](./doc/png/wx05.png)
 
-![小程序F12](./doc/png/wx05.png)
+![小程序F12](./doc/png/wx06.png)
 
 ##### 
