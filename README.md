@@ -28,6 +28,16 @@
 
 ### 使用方式
 
+1.下载Python安装并设置环境变量
+
+1.下载Node.JS安装并设置环境变量
+
+2.进入项目目录 cmd运行 下面命令安装依赖
+
+npm install
+
+
+
 ####  WeChatWin.dll.js 
 
 微信浏览器打开F12需要运行 WeChatWin.dll.js  并传入参数
