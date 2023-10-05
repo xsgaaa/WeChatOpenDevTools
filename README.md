@@ -6,6 +6,11 @@
 
 **注意只支持 Window 平台！！！！**
 
+↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+[点击链接加入QQ群聊【编程喵交流群】](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=6egP5tm2rrUCPOJj0j52PCyL5MM6YuYP&authKey=89mtVgStEuC85eDLVx6bRFhlTiqgjd6NmYIaICLYDGkfLExrLxHafFBoWakKfn4N&noverify=0&group_code=850969908)                             
+
+志远QQ:1258586900
+
 ### 支持版本
 
 | 微信版本 WeChatWin.dll | 小程序版本  WeChatAppEx.exe | 状态   |
