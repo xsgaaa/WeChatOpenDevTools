@@ -6,11 +6,27 @@
 
 **注意只支持 Window 平台！！！！**
 
+### 支持版本
+
+| 微信版本 WeChatWin.dll | 小程序版本  WeChatAppEx.exe | 状态   |
+| ---------------------- | --------------------------- | ------ |
+| 3.9.7.29_x64           | 8447_x64                    | 最新版 |
+|                        |                             |        |
+|                        |                             |        |
+
+
+
 ### 使用方式
+
+####  WeChatWin.dll.js 
 
 微信浏览器打开F12需要运行 WeChatWin.dll.js  并传入参数
 
-#### 使用vscode
+WeChatWin.dll.js的实现采用了静态代码补丁Pacth的方式,会自动给WeChatWin.dll打补丁
+
+**所以不能提前运行微信！！** 
+
+##### 使用vscode
 
 ```json
 //注意提前把微信给彻底关闭 
@@ -28,7 +44,7 @@
 }
 ```
 
-#### 使用cmd命令行
+##### 使用cmd命令行
 
 ```js
 //注意提前把微信给彻底关闭 
@@ -38,7 +54,7 @@
 node WeChatWin.dll.js 3.9.7.29 x64 "C:/Program Files/Tencent/WeChat/[3.9.7.29]"
 ```
 
-#### 运行后回显
+##### 运行后回显
 
 ```powershell
 //显示如下即可
@@ -49,7 +65,7 @@ WeChatWin.dll已备份! c:\program files\tencent\wechat\[3.9.7.29]\WeChatWin_old
 //错误处理    部分用户C盘微信安装目录没有权限 设置权限即可
 ```
 
-#### 运行微信查看效果
+##### 运行微信查看效果
 
 ![微信](./doc/png/wx01.png)
 
@@ -60,3 +76,60 @@ WeChatWin.dll已备份! c:\program files\tencent\wechat\[3.9.7.29]\WeChatWin_old
 或者可以在网页中右键
 
 ![右键打开](./doc/png/wx04.png)
+
+#### WeChatAppEx.exe.js 
+
+微信小程序打开F12,
+
+WeChatAppEx.exe.js 采用Frida 热补丁Pacth的方式
+
+**需要提前运行微信.需要提前运行微信.需要提前运行微信**
+
+##### 使用Vscode
+
+```json
+//新建一个运行配置
+ {
+      "type": "node",
+      "request": "launch",
+      "name": "WeChatAppEx.exe",
+      "skipFiles": [
+           "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}\\WeChatAppEx.exe.js",
+     //WeChatAppEx.exe版本      位
+     //注意版本信息在WeChatAppEx.exe的目录中
+     //比如                                                                     版本
+     //C:\Users\12585\AppData\Roaming\Tencent\WeChat\XPlugin\Plugins\RadiumWMPF\8447\extracted\runtime
+      "args": ["8447","x64"]
+ }
+```
+
+##### 使用cmd命令行
+
+```js
+//在WeChatAppEx.exe.js所在目录运行命令行
+node WeChatAppEx.exe.js 8447 x64
+```
+
+##### 运行后回显
+
+```js
+PS H:\WeChatOpenDevTools> node WeChatAppEx.exe.js 8447 x64
+HOOK文件组装成功!
+WeChatAppEx.exe 注入成功!
+
+```
+
+##### 运行小程序查看效果
+
+```
+//打开一个小程序后
+HOOK到小程序加载! wxa+id
+```
+
+![小程序](./doc/png/wx05.png)
+
+![小程序F12](./doc/png/wx05.png)
+
+##### 
